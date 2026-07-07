@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     { name: "Kairós Eventos", url: "https://kairoseventosmg.com.ar" },
   ],
   creator: "Kairós Eventos",
-  metadataBase: new URL("https://kairoseventos.com.ar"),
+  metadataBase: new URL("https://kairoseventosmg.com.ar"),
   alternates: {
     canonical: "https://kairoseventosmg.com.ar",
     languages: {
