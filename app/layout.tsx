@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     "salones para eventos premium",
   ],
   authors: [
-    { name: "Kairós Eventos", url: "https://kairoseventos.com.ar" },
+    { name: "Kairós Eventos", url: "https://kairoseventosmg.com.ar" },
   ],
   creator: "Kairós Eventos",
   metadataBase: new URL("https://kairoseventos.com.ar"),
   alternates: {
-    canonical: "https://kairoseventos.com.ar/",
+    canonical: "https://kairoseventosmg.com.ar",
     languages: {
-      "es-AR": "https://kairoseventos.com.ar/",
+      "es-AR": "https://kairoseventosmg.com.ar",
     },
   },
   robots: {
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kairós Eventos | Salón de Eventos Premium",
     description: "El momento perfecto es ahora. Eventos exclusivos en Monte Grande.",
-    url: "https://kairoseventos.com.ar/",
+    url: "https://kairoseventosmg.com.ar/",
     siteName: "Kairós Eventos",
     locale: "es_AR",
     type: "website",
