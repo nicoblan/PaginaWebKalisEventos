@@ -5,17 +5,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const mainImages = [
-  "/Imagen Galeria 1.jpg",
-  "/Imagen Galeria 2.jpg",
-  "/Imagen galeria 3.jpg",
-  "/Imagen Galeria 4.jpg",
-  "/Imagen Galeria.jpg",
-  "/Imagen principal.png",
+  { src: "/Imagen Galeria 1.jpg", alt: "Decoración elegante de salón en Kairós Eventos" },
+  { src: "/Imagen Galeria 2.jpg", alt: "Mesa principal ambientada para una celebración premium" },
+  { src: "/Imagen galeria 3.jpg", alt: "Iluminación y detalles exclusivos en eventos Kairós" },
+  { src: "/Imagen Galeria 4.jpg", alt: "Espacio amplio para fiestas y eventos sociales" },
+  { src: "/Imagen Galeria.jpg", alt: "Entrada del salón de eventos Kairós en Monte Grande" },
+  { src: "/Imagen principal.png", alt: "Vista principal del salón Kairós Eventos" },
 ];
 
 const bottomImages = [
-  "/Imagen galeria 5.jpeg",
-  "/Imagen galeria 6.jpeg",
+  { src: "/Imagen galeria 5.jpeg", alt: "Celebración íntima con estilo en Kairós Eventos" },
+  { src: "/Imagen galeria 6.jpeg", alt: "Ambiente sofisticado para eventos y reuniones" },
 ];
 
 const Gallery = () => {
@@ -29,15 +29,15 @@ const Gallery = () => {
 
         {/* Main Grid */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4 mb-4">
-          {mainImages.map((src, index) => (
-            <GalleryImage key={src} src={src} index={index} />
+          {mainImages.map((image, index) => (
+            <GalleryImage key={image.src} image={image} index={index} />
           ))}
         </div>
 
         {/* Bottom Side-by-Side Images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {bottomImages.map((src, index) => (
-            <GalleryImage key={src} src={src} index={mainImages.length + index} />
+          {bottomImages.map((image, index) => (
+            <GalleryImage key={image.src} image={image} index={mainImages.length + index} />
           ))}
         </div>
       </div>
@@ -45,7 +45,7 @@ const Gallery = () => {
   );
 };
 
-const GalleryImage = ({ src, index }: { src: string; index: number }) => {
+const GalleryImage = ({ image, index }: { image: { src: string; alt: string }; index: number }) => {
   const [error, setError] = React.useState(false);
 
   if (error) return null;
@@ -60,8 +60,8 @@ const GalleryImage = ({ src, index }: { src: string; index: number }) => {
     >
       <div className="aspect-[3/4] relative w-full overflow-hidden bg-emerald/5">
         <Image
-          src={src}
-          alt={`Evento Kairós ${index + 1}`}
+          src={image.src}
+          alt={image.alt}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-110"

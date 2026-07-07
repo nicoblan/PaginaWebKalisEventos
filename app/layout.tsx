@@ -16,21 +16,67 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kairós Eventos | Salón de Eventos Premium — Monte Grande, Buenos Aires",
+  title: {
+    default: "Kairós Eventos | Salón de Eventos Premium — Monte Grande, Buenos Aires",
+    template: "%s | Kairós Eventos",
+  },
   description:
-    "Casamientos, fiestas de 15, corporativos y eventos exclusivos en Monte Grande, Zona Sur Buenos Aires. Capacidad para 350 personas. Atención personalizada.",
+    "Casamientos, fiestas de 15, eventos corporativos y celebraciones exclusivas en Monte Grande, Zona Sur Buenos Aires. Salón premium con atención personalizada.",
   keywords: [
     "salón de eventos monte grande",
     "casamientos zona sur buenos aires",
-    "eventos premium buenos aires",
+    "fiestas de 15 monte grande",
+    "eventos corporativos buenos aires",
+    "salones para eventos premium",
   ],
+  authors: [
+    { name: "Kairós Eventos", url: "https://kairoseventos.com.ar" },
+  ],
+  creator: "Kairós Eventos",
+  metadataBase: new URL("https://kairoseventos.com.ar"),
+  alternates: {
+    canonical: "https://kairoseventos.com.ar/",
+    languages: {
+      "es-AR": "https://kairoseventos.com.ar/",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Kairós Eventos | Salón de Eventos Premium",
     description: "El momento perfecto es ahora. Eventos exclusivos en Monte Grande.",
-    url: "https://kairoseventos.com.ar",
+    url: "https://kairoseventos.com.ar/",
     siteName: "Kairós Eventos",
     locale: "es_AR",
     type: "website",
+    images: [
+      {
+        url: "/Imagen principal.png",
+        width: 1200,
+        height: 630,
+        alt: "Salón Kairós Eventos en Monte Grande",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kairós Eventos | Salón de Eventos Premium",
+    description: "Casamientos, fiestas de 15 y eventos corporativos en Monte Grande, Buenos Aires.",
+    creator: "Kairós Eventos",
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
