@@ -78,6 +78,17 @@ Espero su respuesta. Muchas gracias.`;
                   @Kairos.eventos.mg
                 </a>
               </div>
+              <div>
+                <h4 className="text-sage text-xs tracking-widest uppercase mb-2">TikTok</h4>
+                <a 
+                  href="https://www.tiktok.com/@kairos.eventos.mg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald font-serif text-xl hover:text-sage transition-colors"
+                >
+                  @kairos.eventos.mg
+                </a>
+              </div>
 
             </div>
           </motion.div>

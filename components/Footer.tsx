@@ -22,13 +22,15 @@ const Footer = () => {
               <span className="text-xs uppercase tracking-widest font-sans">Instagram</span>
             </a>
             <a 
-              href="mailto:Kairoseventos29@gmail.com" 
+              href="https://www.tiktok.com/@kairos.eventos.mg"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-nude transition-colors flex items-center space-x-2"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.5 2h3.2c.3 1.1 1.1 2 2.2 2.4v3.2c-1.3-.1-2.5-.5-3.6-1.2v7.2c0 3.1-2.5 5.6-5.6 5.6S4.7 16.7 4.7 13.6 7.2 8 10.3 8c.3 0 .6 0 .9.1v3.3c-.3-.1-.6-.1-.9-.1-1.4 0-2.6 1.2-2.6 2.6s1.2 2.6 2.6 2.6c1.4 0 2.6-1.2 2.6-2.6V2z" />
               </svg>
-              <span className="text-xs uppercase tracking-widest font-sans">Email</span>
+              <span className="text-xs uppercase tracking-widest font-sans">TikTok</span>
             </a>
           </div>
 
