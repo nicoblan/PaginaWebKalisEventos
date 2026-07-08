@@ -61,18 +61,18 @@ const Navbar = () => {
         </div>
 
         {/* 3. CTA - Minimalista y liviano */}
-        <div className="hidden md:flex flex-1 justify-end items-center gap-3">
+        <div className="hidden md:flex flex-1 justify-end items-center gap-2 whitespace-nowrap">
           <a
             href="https://www.google.com/maps/search/?api=1&query=Julio+Argentino+Roca+1122,+Monte+Grande"
             target="_blank"
             rel="noopener noreferrer"
-            className={`px-5 py-2.5 text-xs tracking-[0.2em] uppercase transition-all duration-500 hover:text-sage ${textColor}`}
+            className={`px-4 py-2.5 text-xs tracking-[0.2em] uppercase transition-all duration-500 hover:text-sage ${textColor}`}
           >
             Ubicación
           </a>
           <Link
             href="#contacto"
-            className={`px-8 py-2.5 border-[0.5px] text-xs tracking-[0.2em] uppercase transition-all duration-500 hover:bg-emerald hover:text-white hover:border-emerald ${textColor} ${borderColor}`}
+            className={`px-6 py-2.5 border-[0.5px] text-xs tracking-[0.2em] uppercase transition-all duration-500 hover:bg-emerald hover:text-white hover:border-emerald ${textColor} ${borderColor}`}
           >
             Consultá tu fecha
           </Link>
