@@ -68,6 +68,17 @@ Espero su respuesta. Muchas gracias.`;
                 <p className="text-emerald font-serif text-xl">Kairoseventos29@gmail.com</p>
               </div>
               <div>
+                <h4 className="text-sage text-xs tracking-widest uppercase mb-2">Facebook</h4>
+                <a
+                  href="https://www.facebook.com/share/1JqqC1DrE4/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald font-serif text-xl hover:text-sage transition-colors"
+                >
+                  @kairoseventosmg
+                </a>
+              </div>
+              <div>
                 <h4 className="text-sage text-xs tracking-widest uppercase mb-2">Instagram</h4>
                 <a 
                   href="https://www.instagram.com/kairos.eventos.mg?igsh=MW1vaXM5YXF1MXZuaA==" 

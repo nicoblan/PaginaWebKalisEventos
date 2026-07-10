@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Imagen principal.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Salón Kairós Eventos en Monte Grande",
@@ -74,9 +74,9 @@ export const metadata: Metadata = {
     creator: "Kairós Eventos",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
